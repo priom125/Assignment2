@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  
+}
+.navbar img {
+    height: 50px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-links li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: bold;
+    /* font-family: "Noto Serif", serif; */
+    font-family: "Inter", sans-serif;
+}
+
+.nav-links img{
+    height: 24px;
+    width: 24px;
+}
+/* -----------------------Navbar end----------------------- */
+
+
+
+
