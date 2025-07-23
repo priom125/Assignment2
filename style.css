@@ -1,89 +1,166 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f8f8f8;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
 }
-body{
-    max-width: 1440px;
-    margin: 0 auto;
+body {
+  max-width: 1440px;
+  margin: 0 auto;
 }
-
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
 }
 .navbar img {
-    height: 50px;
+  height: 50px;
 }
 .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 .nav-links li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font: bold;
-    /* font-family: "Noto Serif", serif; */
-    font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: bold;
+  /* font-family: "Noto Serif", serif; */
+  font-family: "Inter", sans-serif;
 }
 
-.nav-links img{
-    height: 24px;
-    width: 24px;
-    cursor: pointer;
+.nav-links img {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
 }
 /* -----------------------Navbar end----------------------- */
 
 .banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 7.5rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7.5rem auto;
 }
 
 .banner-left {
-    max-width: 570px;
-    height: 286px;
-    margin-top: 7rem;;
+  max-width: 570px;
+  height: 286px;
+  margin-top: 7rem;
 }
 .banner-left h1 {
-    color: #000;
-    font-weight: bold;
-    font-size: 4rem;
-    font-family: Noto Serif, serif;
-
+  color: #000;
+  font-weight: bold;
+  font-size: 4rem;
+  font-family: Noto Serif, serif;
 }
 .banner-left h1 span {
-    color: #E95A08;
-    font-weight: bold;
-    font-family: Noto Serif, serif;
+  color: #e95a08;
+  font-weight: bold;
+  font-family: Noto Serif, serif;
 }
 .banner-left p {
-    color: #000;
-    opacity: 0.5;
-    font-size: 1.5rem;
-    font-family: Inter, sans-serif;
-    margin-top: 1rem;
+  color: #000;
+  opacity: 0.5;
+  font-size: 1.5rem;
+  font-family: Inter, sans-serif;
+  margin-top: 1rem;
 }
 .banner-right {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .banner-right img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* --------------------------------Banner end------------------------------ */
+
+.our-plants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 7.5rem auto;
+  margin-bottom: 7.5rem;
+}
+.our-plants h2 {
+  color: #000;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: Noto Serif, serif;
+}
+.our-plants h2 span {
+  color: #e95a08;
+  font-weight: bold;
+  font-family: Noto Serif, serif;
+}
+.our-plants p {
+  color: #000;
+  opacity: 0.5;
+  font-size: 1.5rem;
+  font-family: Inter, sans-serif;
+  margin-top: 1rem;
+  opacity: 0.5;
+  max-width: 888px;
+  text-align: center;
+  max-height: 58px;
+}
+
+.all-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+
+  width: 100%;
+  place-content: center;
+  text-align: center;
+  margin-top: 7.5rem;
+}
+.our-plants .card {
+  margin: 1rem auto;
+  display: grid;
+  max-width: 270px;
+  max-height: 485px;
+  /* grid-template-columns: repeat(4, 1fr); */
+}
+.all-card .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.all-card .card h5 {
+  color: #000;
+  font-weight: normal;
+  font-size: 1.5rem;
+  font-family: Inter, sans-serif;
+}
+.all-card span {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: Inter, sans-serif;
+  margin-top: 0.5rem;
+}
+.btn {
+  /* width: 180px; */
+  height: 64px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  color: #fff;
+  background-color: #e95a08;
+  font-weight: 600;
+  margin: 2rem 0;
 }
