@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 /* body {
   
@@ -19,8 +18,7 @@
   align-items: center;
   margin-top: 1.5rem;
   max-width: 1140px;
-    margin: 1.5rem auto;
-  
+  margin: 1.5rem auto;
 }
 .navbar img {
   height: 50px;
@@ -54,7 +52,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 7.5rem auto;
-    max-width: 1140px;
+  max-width: 1140px;
 }
 
 .banner-left {
@@ -96,8 +94,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
- margin: 7.5rem auto;
-    max-width: 1140px;
+  margin: 7.5rem auto;
+  max-width: 1140px;
 }
 .our-plants h2 {
   color: #000;
@@ -191,7 +189,7 @@
   font-family: Noto Serif, serif;
 }
 .content ul li {
-   color: #000;
+  color: #000;
   font-weight: 600;
   font-size: 1.2rem;
   font-family: Inter, sans-serif;
@@ -201,48 +199,48 @@
   margin: 1rem 0;
   list-style-type: disc;
 }
-/* -------------------------flower-lover end---------------------------- */ 
+/* -------------------------flower-lover end---------------------------- */
 .join {
-    background-image: url('./assets/news-letter-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 533px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: transparent !important;
-    max-width: 1440px !important;
-    margin: 0 auto;
+  background-image: url("./assets/news-letter-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 533px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent !important;
+  max-width: 1440px !important;
+  margin: 0 auto;
 }
 .content-container {
-    max-width: 830px;
-    width: 100%;
-    max-height: 141px;
-    gap: 0;
+  max-width: 830px;
+  width: 100%;
+  max-height: 141px;
+  gap: 0;
 }
 .join h1 {
-    color: #fff;
-    font-weight: bold;
-    font-size: 3.125rem;
-    margin: 1rem 0;
-    font-family: Noto Serif, serif;
+  color: #fff;
+  font-weight: bold;
+  font-size: 3.125rem;
+  margin: 1rem 0;
+  font-family: Noto Serif, serif;
 }
 .content-container input {
-    width: 630px;
-    height: 64px;
-    border: none;
-    outline: none;
-    padding: 0 1rem;
-    font-size: 1.2rem;
-    font-family: Inter, sans-serif;
-    
-    background-color: #fff;
+  width: 630px;
+  height: 64px;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-family: Inter, sans-serif;
+
+  background-color: #fff;
 }
 
-.btn2{
+.btn2 {
   width: 186px;
   height: 64px;
   border: none;
@@ -251,18 +249,53 @@
   color: #fff;
   background-color: #e95a08;
   font-weight: 600;
-  margin: 0; 
+  margin: 0;
   font-size: 1rem;
-
 }
 
 .form-container {
   display: flex;
   gap: 0;
 }
-/* ----------------------------join end---------------------------- */  
+/* ----------------------------join end---------------------------- */
 
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  place-content: center;
+  margin: 7.5rem auto;
+  max-width: 1440px;
+  max-height: 348px;
+  padding: 0 10rem;
+  text-align: center;
+  font-family: Inter, sans-serif;
+}
+.footer-col1 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  line-height: 2rem;
+  font-family: Inter, sans-serif;
+  color: #6b7280;
+  text-align: left;
+}
+.footer-col1 img {
+  width: 135px;
+  height: 82px;
+  margin-bottom: 1rem;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 3.5rem;
+  font-family: Inter, sans-serif;
+  color: #6b7280;
+  max-height: 248px;
+}
 
-
-
-
+/* ---------------------------foooter end---------------------------- */ 
