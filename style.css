@@ -17,7 +17,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    
   
 }
 .navbar img {
@@ -29,6 +29,7 @@ body{
     gap: 20px;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 .nav-links li {
     display: flex;
@@ -42,9 +43,47 @@ body{
 .nav-links img{
     height: 24px;
     width: 24px;
+    cursor: pointer;
 }
 /* -----------------------Navbar end----------------------- */
 
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 7.5rem auto;
+}
 
+.banner-left {
+    max-width: 570px;
+    height: 286px;
+    margin-top: 7rem;;
+}
+.banner-left h1 {
+    color: #000;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: Noto Serif, serif;
 
-
+}
+.banner-left h1 span {
+    color: #E95A08;
+    font-weight: bold;
+    font-family: Noto Serif, serif;
+}
+.banner-left p {
+    color: #000;
+    opacity: 0.5;
+    font-size: 1.5rem;
+    font-family: Inter, sans-serif;
+    margin-top: 1rem;
+}
+.banner-right {
+    width: 100%;
+    height: 100%;
+}
+.banner-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
