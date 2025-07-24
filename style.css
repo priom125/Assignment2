@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 /* body {
   
@@ -214,22 +215,22 @@
   font-weight: 700;
   color: #333;
   margin: 0;
-    font-size: 3rem;
+  font-size: 3rem;
   font-family: Noto Serif, serif;
   margin-bottom: 1.5rem;
 }
 
 .section-header h1 span {
-  color: #e95a08; 
+  color: #e95a08;
 }
 
 .section-header p {
   font-size: 1.5rem;
   color: #666;
-  
-  margin:  auto ;
+
+  margin: auto;
   line-height: 1.6;
-    max-width: 888px;
+  max-width: 888px;
   text-align: center;
   max-height: 58px;
 }
@@ -240,8 +241,8 @@
   gap: 20px;
   text-align: left;
   max-width: 1140px;
-    max-height: 424px;
-    margin: 7.5rem auto;
+  max-height: 424px;
+  margin: 7.5rem auto;
 }
 
 .left-column {
@@ -319,20 +320,6 @@
   font-size: 1.2rem;
 }
 
-/* Responsive design */
-/* @media (max-width: 768px) {
-            .deals-grid {
-                grid-template-columns: 1fr;
-            }
-            .section-header h1 {
-                font-size: 2rem;
-            }
-            .deal-card h2 {
-                font-size: 1.2rem;
-            }
-            .right-column .deal-card h2 {
-                font-size: 1.5rem;
-            } */
 /* ------------------------------------join section------------------------------------ */
 
 .join {
@@ -400,6 +387,8 @@
   gap: 1.5rem;
   width: 100%;
   place-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 7.5rem auto;
   max-width: 1440px;
   max-height: 348px;
@@ -434,3 +423,125 @@
 }
 
 /* ---------------------------foooter end---------------------------- */
+
+/* ---------------------------------Responsive start---------------------- */
+@media screen and (max-width: 768px) {
+  .banner,
+  .our-plants,
+  .flower-lover,
+  .join,
+  .footer {
+    flex-direction: column;
+  }
+  .navbar {
+    margin-left: 10%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .cart {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+  }
+  .nav-links {
+    display: none;
+  }
+  .banner {
+    flex-direction: column-reverse;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .banner-left h1 {
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+    padding: 0 1rem;
+  }
+
+  .banner-left p {
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+  .our-plants {
+    margin: 0 auto;
+
+    margin-bottom: 1.5rem;
+  }
+  .our-plants h2 {
+    font-size: 1.5rem;
+  }
+  .our-plants p {
+    font-size: 0.9rem;
+    max-height: 80px;
+    padding: 0 1.25rem;
+  }
+
+  .all-card {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 4rem;
+    padding: 1rem;
+  }
+  .container {
+    margin: 0rem auto;
+    text-align: center;
+  }
+  .flower-lover {
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  .content h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    width: 100%;
+  }
+  .content ul li {
+    font-size: 0.9rem;
+
+    margin: 1rem 0;
+  }
+  .section-header h1 {
+    font-size: 1.5rem;
+    margin-top: 1.25rem;
+    padding: 0 1rem;
+  }
+
+  .section-header p {
+    padding: 0 1.5rem;
+    font-size: 0.8rem;
+    max-height: 200px;
+    max-width: 361px;
+  }
+  .join {
+    min-height: 275px;
+    max-width: 412px !important;
+    margin: 0 auto;
+  }
+  .join h1 {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+  }
+  .content-container input {
+    width: 218px;
+    height: 50px;
+    margin-left: 2.75rem;
+  }
+  .content-container {
+    margin: 0 auto;
+  }
+
+  .btn2 {
+    width: 110px;
+    height: 50px;
+  }
+  .deals-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 3rem auto;
+    margin-bottom: 5rem;
+    max-height: 581px;
+  }
+}
