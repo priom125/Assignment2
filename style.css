@@ -58,7 +58,7 @@
 .banner-left {
   max-width: 570px;
   height: 286px;
-  margin-top: 7rem;
+  margin-top: 0rem;
 }
 .banner-left h1 {
   color: #000;
@@ -200,6 +200,141 @@
   list-style-type: disc;
 }
 /* -------------------------flower-lover end---------------------------- */
+.container {
+  max-width: 1140px;
+  margin: 7.5rem auto;
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.section-header h1 {
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+    font-size: 3rem;
+  font-family: Noto Serif, serif;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h1 span {
+  color: #e95a08; 
+}
+
+.section-header p {
+  font-size: 1.5rem;
+  color: #666;
+  
+  margin:  auto ;
+  line-height: 1.6;
+    max-width: 888px;
+  text-align: center;
+  max-height: 58px;
+}
+
+.deals-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  text-align: left;
+  max-width: 1140px;
+    max-height: 424px;
+    margin: 7.5rem auto;
+}
+
+.left-column {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.deal-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  height: 100%;
+}
+
+.deal-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.deal-card-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.deal-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.deal-card p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0 15px 0;
+}
+
+.shop-now-btn {
+  display: inline-block;
+  padding: 10px 20px;
+
+  color: #fff;
+  text-decoration: underline;
+
+  font-weight: semibold;
+}
+
+.right-column .deal-card {
+  height: 100%;
+}
+
+.right-column .deal-card-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.right-column .deal-card p {
+  font-size: 2rem;
+}
+
+.right-column .deal-card p {
+  font-size: 1.2rem;
+}
+
+/* Responsive design */
+/* @media (max-width: 768px) {
+            .deals-grid {
+                grid-template-columns: 1fr;
+            }
+            .section-header h1 {
+                font-size: 2rem;
+            }
+            .deal-card h2 {
+                font-size: 1.2rem;
+            }
+            .right-column .deal-card h2 {
+                font-size: 1.5rem;
+            } */
+/* ------------------------------------join section------------------------------------ */
+
 .join {
   background-image: url("./assets/news-letter-bg.png");
   background-size: cover;
@@ -298,4 +433,4 @@
   max-height: 248px;
 }
 
-/* ---------------------------foooter end---------------------------- */ 
+/* ---------------------------foooter end---------------------------- */
