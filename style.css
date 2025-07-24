@@ -5,13 +5,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
-}
-/* body {
   
-  margin: 0 auto;
-  max-width: 1140px;
-} */
+}
+
 
 .navbar {
   display: flex;
@@ -31,7 +27,10 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  
 }
+
+
 .nav-links li {
   display: flex;
   align-items: center;
@@ -39,6 +38,7 @@
   font: bold;
   /* font-family: "Noto Serif", serif; */
   font-family: "Inter", sans-serif;
+  text-align: center;
 }
 
 .nav-links img {
@@ -421,6 +421,9 @@
   color: #6b7280;
   max-height: 248px;
 }
+/* .last-row{
+
+} */
 
 /* ---------------------------foooter end---------------------------- */
 
@@ -438,16 +441,13 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
-    width: 100%;
+    width: 85%;
+    align-items: center;
   }
-  .cart {
-    position: absolute;
-    right: 10%;
-    top: 5%;
-  }
-  .nav-links {
+  .nav-links li{
     display: none;
   }
+ 
   .banner {
     flex-direction: column-reverse;
     margin-top: 0.8rem;
@@ -482,6 +482,9 @@
     margin-top: 4rem;
     padding: 1rem;
   }
+  .btn {
+  height: 50px;
+}
   .container {
     margin: 0rem auto;
     text-align: center;
@@ -524,7 +527,8 @@
   .content-container input {
     width: 218px;
     height: 50px;
-    margin-left: 2.75rem;
+    margin-left:auto;
+    margin-right: 0;
   }
   .content-container {
     margin: 0 auto;
@@ -533,6 +537,8 @@
   .btn2 {
     width: 110px;
     height: 50px;
+    margin-right: auto;
+    margin-left: 0;
   }
   .deals-grid {
     display: grid;
